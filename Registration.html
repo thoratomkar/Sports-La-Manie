@@ -1,0 +1,219 @@
+<html>
+    <head>
+		<link rel="icon" href="slm.ico">
+        <title>Registration Form</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        
+		<style>
+		.grad
+		{
+			height=500px;
+			background-color:lightgreen;
+		}
+	
+		.button 
+		{
+			background-color:green;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		.shadow
+		{
+			transition-duration: 0.4s;
+		}
+		</style>
+		<script type="text/javascript">
+		
+		function checkForm()
+		{
+			if(document.forms["regform"]["username"].value== "") 
+			{
+				alert("Error: Username cannot be blank!");
+				document.forms["regform"]["username"].focus();
+				return false;
+			}
+			
+			if(document.forms["regform"]["email"].value== "") 
+			{
+				alert("Error: Email cannot be blank!");
+				document.forms["regform"]["email"].focus();
+				return false;
+			}
+			
+			re = /^\w+$/;
+				
+			if(!re.test(document.forms["regform"]["username"].value)) 
+			{
+				alert("Error: Username must contain only letters, numbers and underscores!");
+				document.forms["regform"]["username"].focus();
+				return false;
+			}
+			
+			if(document.forms["regform"]["passwd"].value != "") 
+			{
+				re = /[A-Z]/;
+			
+				if(!re.test(document.forms["regform"]["passwd"].value)) 
+				{
+					alert("Error: Password must contain at least one upper-case letter (A-Z)!");
+					document.forms["regform"]["passwd"].focus();
+					return false;
+				}
+
+				if(document.forms["regform"]["passwd"].value.length < 6) 
+				{
+					alert("Error: Password must contain at least six characters!");
+					document.forms["regform"]["passwd"].focus();
+					return false;
+				}
+				
+				if(document.forms["regform"]["passwd"] == document.forms["regform"]["username"]) 
+				{
+					alert("Error: Password must be different from Username!");
+					document.forms["regform"]["passwd"].focus();
+					return false;
+				}
+				
+				re = /[0-9]/;
+				
+				if(!re.test(document.forms["regform"]["passwd"].value)) 
+				{
+					alert("Error: password must contain at least one number (0-9)!");
+					document.forms["regform"]["passwd"].focus();
+					return false;
+				}
+				
+				re = /[a-z]/;
+				
+				if(!re.test(document.forms["regform"]["passwd"].value)) 
+				{
+					alert("Error: password must contain at least one lower-case letter (a-z)!");
+					document.forms["regform"]["passwd"].focus();
+					return false;
+				}
+			} 
+			else 
+			{
+				alert("Error: Please check that you've entered your password!");
+				document.forms["regform"]["passwd"].focus();
+				return false;
+			}
+			
+			if(!document.forms["regform"]["tac"].checked)
+			{
+				alert("Error: You need to accept the terms and conditions!");
+				return false;
+			}
+
+			return true;
+		}
+		</script>
+    </head>
+	
+    <body class="grad" style="background: linear-gradient(green,white);background-repeat:no-repeat;"> 
+	<div>
+        <div style="display:block;background-color: red;height:44%;width:99%;position:absolute;top:2%">	
+	<img src="fs-welcome.jpg" width=100% height=100%>
+        </div>
+<div style="display:block;height:120%;width:55%;position:absolute;top:42%;left:22%">		
+		<form action="reg.php" name="regform" method="POST" onsubmit="return checkForm()">
+            <center><h1>Registration</h1></center>
+            <fieldset class="row1">
+                <legend>Account Details
+                </legend>
+                <p>
+                    <label>Email * &nbsp&nbsp&nbsp&nbsp
+                    </label>
+                    <input type="text" name="email">
+                </p>
+				<p>
+                    <label>Password*
+                    </label>
+                    <input type="text" name="passwd">
+                </p>
+            </fieldset>
+            <fieldset class="row2">
+                <legend>Personal Details
+                </legend>
+                <p>
+                    <label>Name *&nbsp&nbsp
+                    </label>
+                    <input type="text" name="username">
+                </p>
+                <p>
+                    <label>Phone &nbsp
+                    </label>
+                    <input type="text" name="phone"maxlength="10">
+                </p>
+                <p>
+                    <label>Street&nbsp&nbsp&nbsp&nbsp&nbsp
+                    </label>
+                    <input type="text" name="street">
+                </p>
+                <p>
+                    <label>City &nbsp&nbsp&nbsp&nbsp
+                    </label>
+                    <input type="text" name="city">
+                </p>
+                <p>
+                    <label>Country*
+                    </label>
+                    <select name="country">
+                        <option value="India">India</option>
+						<option value="Australia">Australia</option>
+						<option value="England">England</option>
+						<option value="Bangladesh">Bangladesh</option>
+						<option value="Pakistan">Pakistan</option>
+						<option value="West Indies">West Indies</option>
+						<option value="South Africa">South Africa</option>
+						<option value="New Zealand">New Zealand</option>
+						<option value="Sri Lanka">Sri Lanka</option>
+                    </select>
+                </p>
+		        <p>
+                    <label>Gender *</label>
+                    <input type="radio" name="gender" value="M">
+                    <label class="gender">Male</label>
+                    <input type="radio" name="gender" value="F">
+                    <label class="gender">Female</label>
+                </p>
+                <p>
+                    <label>Birthdate *
+                    </label>
+                    <input type="text" name="birthdate">dd/mm/yyyy
+                </p>
+                
+                               
+            </fieldset>
+            <fieldset class="row4">
+					<legend>Terms and Mailing
+                </legend>
+                <p class="agreement">
+                    <input type="checkbox" name="tac" value="1"/>
+                    <label>*  I accept the <a href="#">Terms and Conditions</a></label>
+                </p>
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>I want to receive personalized news by your site</label>
+                </p>
+                
+            </fieldset>
+            <center><input class="button shadow" type="submit" value="Submit"></center>
+        </form>
+		</div>
+    </body>
+</html>
+
+
+
+
+

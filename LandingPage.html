@@ -1,0 +1,114 @@
+<html>
+<head>
+<link rel="icon" href="slm.ico">
+<title>Sports la Manie - All your sporting news</title>
+<style>
+body {
+    background-color:lightgreen;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color:lightblue;
+    }
+}
+a:link {
+    text-decoration: none;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 60px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+}
+
+.shadow{
+ transition-duration: 0.4s;
+}
+
+.shadow:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.logo{
+transition-duration: 1s;
+transition-timing-function: linear;
+transition-delay: 0.3s;
+}
+
+.logo:hover{
+transform:rotate(360deg) scale(1.3) translate(20px,40px);
+}
+</style>
+<script>
+	function hover1(element) 
+	{
+		element.setAttribute('src', 'footballtext.jpg');
+		element.setAttribute('style', 'opacity:0.4;');
+	}
+	function unhover1(element) 
+	{
+		element.setAttribute('src', 'football.jpg');
+		element.setAttribute('style', 'opacity:1;');
+	}
+	function hover2(element) 
+	{
+		element.setAttribute('src', 'crickettext.jpg');
+		element.setAttribute('style', 'opacity:0.4;');
+	}
+	function unhover2(element) 
+	{
+		element.setAttribute('src', 'cricket.jpg');
+		element.setAttribute('style', 'opacity:1;');
+	}
+	function hover3(element) 
+	{
+		element.setAttribute('src', 'f1text.jpg');
+		element.setAttribute('style', 'opacity:0.4;');
+	}
+	function unhover3(element) 
+	{
+		element.setAttribute('src', 'f1.jpg');
+		element.setAttribute('style', 'opacity:1;');
+	}
+</script>
+</head>
+<body style="background-image:bgimage.jpg">
+	<div align="center" style="width:50%;position:absolute;left:10px;bottom:20%">
+		<img class="logo" src="slm.jpg" height="50%" width="30%">
+		<h1 style="color:red;font-size:40px;;ext-shadow: 2px 2px #111111;">Sports la Manie</h1>
+		<h2 style="color:red;">One stop for all your sporting news</h2>
+	</div>
+	<div align="left" style="width:24%;position:absolute;left:3%;top:80%;bottom:2%">
+		<a class="button shadow" style="background-color:red" href="registration.html">
+			Sign Up 
+		</a>
+	</div>
+	<div align="left" style="width:24%;position:absolute;left:26%;top:80%;bottom:2%">
+		<a class="button shadow" style="background-color:green" href="Login.html">
+			Login 
+		</a>
+	</div>
+	<div style="width:50%;position:absolute;right:10px;top:10px">
+		<a class="shadow" href="FootballHome.html">
+			<img src="football.jpg" height=33% width=100% onmouseover="hover1(this);" onmouseout="unhover1(this);">
+		</a>
+	</div>
+	<div align="right" style="width:50%;position:absolute;right:10px;top:33%">
+		<a class="shadow" href="CricketHome.html">
+			<img src="cricket.jpg" height=33% width=100% onmouseover="hover2(this);" onmouseout="unhover2(this);">
+		</a>
+	</div>
+	<div align="right" style="width:50%;position:absolute;right:10px;top:66%">
+		<a class="shadow" href="F1Home.html">
+			<img src="f1.jpg" height=33% width=100% onmouseover="hover3(this);" onmouseout="unhover3(this);">
+		</a>
+	</div>
+</body>
+</html>

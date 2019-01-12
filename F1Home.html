@@ -1,0 +1,221 @@
+<html> 
+<head>
+	<link rel="icon" href="slm.ico">
+	<title>Sports la Manie - F1 Home</title>	
+	<style>
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+}
+
+.shadow{
+ transition-duration: 0.4s;
+}
+
+.shadow:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.fixtures{	
+	display:block;
+	background-color:grey;
+	width:40%;
+	position:absolute;
+	left:50%;
+	right:3%;
+	top:130%;
+	opacity:0.9;
+	font-size:20px;
+	color:white;
+}
+
+.news{
+	display:block;
+	background-color:grey;
+	height:300px;
+	width:40%;
+	position:absolute;
+	left:3%;
+	right:2%;
+	top:130%;
+	opacity:0.9;
+	font-size:20px;
+	padding: 15px 32px;
+	color:white;
+}
+
+.race{
+transition-duration: 0.5s;
+}
+
+.racedet{
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s, opacity 0.4s linear;
+}
+
+.race1:hover{
+font-size:30px;
+background-color:black;
+}
+.race2:hover{
+font-size:30px;
+background-color:black;
+}
+.race3:hover{
+font-size:30px;
+background-color:black;
+}
+.race4:hover{
+font-size:30px;
+background-color:black;
+}
+.race5:hover{
+font-size:30px;
+background-color:black;
+}
+
+.race1:hover + .race1det {
+background-color:black;
+visibility: visible;
+opacity: 1;
+}
+.race2:hover + .race2det {
+background-color:black;
+visibility: visible;
+opacity: 1;
+}
+.race3:hover + .race3det {
+background-color:black;
+visibility: visible;
+opacity: 1;
+}
+.race4:hover + .race4det {
+background-color:black;
+visibility: visible;
+opacity: 1;
+}
+.race5:hover + .race5det {
+background-color:black;
+visibility: visible;
+opacity: 1;
+}
+.race5:hover + .race5time {
+background-color:black;
+}
+</style>
+</head>
+<body style="background-image:url(f1/f1bg.png);">
+	<nav>
+	<div align="center" style="display:block;height:10%;width:10%;position:absolute;left:2%;top:2%">
+		<a href="LandingPage.html" class="button shadow" style="background-color: #ff0000;">Home</a>
+	</div>
+	<div style="display:block;height:10%;width:76%;position:absolute;left:16%;top:3%">
+		<a href="http://www.ferrari.com/en_in/" class="shadow">
+		<img src="f1/ferrari.png" height=65% width=8% position=absolute left=2%> 
+		</a>
+		<a href="http://www.mercedesamgf1.com/en/" class="shadow">
+		<img src="f1/mercedes.png" height=65% width=8%> 
+		</a>
+		<a href="http://www.redbullracing.com/" class="shadow">
+		<img src="f1/redbull.png" height=65% width=8%> 
+		</a>
+		<a href="http://www.williamsf1.com/" class="shadow">
+		<img src="f1/williams.png" height=65% width=8%> 
+		</a>
+		<a href="http://www.mclaren.com/formula1/team/" class="shadow">
+		<img src="f1/mclaren.png" height=65% width=8%> 
+		</a>
+		<a href="http://www.forceindiaf1.com/" class="shadow">
+		<img src="f1/forceindia.png" height=65% width=8%> 
+		</a>
+		<a href="http://www.scuderiatororosso.com/en_INT" class="shadow">
+		<img src="f1/tororosso.png" height=65% width=8%> 
+		</a>
+		<a href="http://www.renaultsport.com/?lang=en" class="shadow">
+		<img src="f1/renault.png" height=65% width=8%> 
+		</a>
+		<a href="https://www.haasf1team.com/" class="shadow">
+		<img src="f1/haas.png" height=65% width=8%> 
+		</a>
+		<a href="https://www.sauberf1team.com/" class="shadow">
+		<img src="f1/sauber.png" height=65% width=8%> 
+		</a>
+		<a href="http://manorf1team.com/" class="shadow">
+		<img src="f1/manor.png" height=65% width=8%> 
+		</a>
+		
+	</div>
+	<div align="center" style="display:block;height:10%;width:10%;position:absolute;right:2%;top:2%">
+		<a href="Login.html" class="button shadow" style="background-color: #4CAF50;">Login</a>
+	</div>
+	</nav>
+	<div style="display:block;position:absolute;right:2%;left:2%;top:12%">
+	<main>
+	<hr>
+		<marquee class="shadow" style="background-color:yellow;color:red;font-weight:bold;" scrollamount="10">
+			Upcoming races
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			Chinese Grand Prix
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			Russian Grand Prix
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			Spanish Grand Prix
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		</marquee>
+		<br>
+		<br>
+		<div class="news shadow">
+		<p>	News Section Under Construction</p> 
+		<p>	Inconvenience Regretted!</p>	
+		</div>
+		<div class="fixtures shadow">
+		<h1 style="text-align:center;background-color:black">Upcoming Races</h1>
+		<div style="width:60%;float:left">
+			<div class="race1 race">&nbsp&nbspChinese Grand Prix</div>
+				<div class="race1det racedet">Shanghai International Circuit</div>
+			<div class="race2 race">&nbsp&nbspRussian Grand Prix</div>
+				<div class="race2det racedet">Sochi Autodrom</div>
+			<div class="race3 race">&nbsp&nbspSpanish Grand Prix</div>
+				<div class="race3det racedet">Circuit de Barcelone-Catalunya</div>
+			<div class="race4 race">&nbsp&nbspMonaco Grand Prix</div>
+				<div class="race4det racedet">Circuit de Monaco</div>
+			<div class="race5 race">&nbsp&nbspCanadian Grand Prix</div>
+				<div class="race5det racedet">Circuit Gilles Villeneuve</div><br>
+		</div>
+		<div style="width:40%;float:right;">
+		<div class="race">17 April<br><br></div>
+		<div class="race">1 May<br><br></div>
+		<div class="race">15 May<br><br></div>
+		<div class="race">29 May<br><br></div>
+		<div class="race">12 June<br></div>
+		</div>
+		</div>
+	</div>
+	</main>
+</body>
+</html>

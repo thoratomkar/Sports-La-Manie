@@ -1,0 +1,51 @@
+<html> 
+	<head>
+		<link rel="icon" href="slm.ico">	
+		<title>Sports la Manie - Login</title>
+		
+		<style>
+		.grad
+		{
+			height=500px;
+			background-color:lightgreen;
+		}
+	
+		.button 
+		{
+			background-color:green;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		.shadow
+		{
+			transition-duration: 0.4s;
+		}
+		</style>
+
+	</head>
+	
+	<body class="grad" style="background: linear-gradient(green,white);background-repeat:no-repeat;">
+		<div style="display:block;height:50%;width:50%;position:absolute;top:5%;left:25%;text-align:center;">
+			<form action="login.php" name="login" method="POST">
+				<center><h1>Login</h1></center>
+				<fieldset>
+					<legend></legend>
+					<label>Username</label>
+					<input type="text" name="username">
+					<br><br>
+					<label>Password</label>
+					<input type="text" name="passwd">
+					<center><input class="button shadow" type="submit" value="Submit"></center>
+				</fieldset>	
+			</form>
+		</div>
+	</body>
+</html>
